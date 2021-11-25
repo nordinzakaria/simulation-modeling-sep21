@@ -100,6 +100,8 @@ class Entity(threading.Thread):
                     self.grid.locks[y][x].acquire()                    
                     if self.grid.get(x, y) == None:
                         self.grid.remove(self.x, self.y)
+                        self.x = x
+                        self.y = y
                         self.grid.add(self, x, y)
                         found = True
                     self.grid.locks[y][x].release()                         
