@@ -71,7 +71,7 @@ class Entity(threading.Thread):
             for i in range(3):
                 for j in range(3):
                     nx = self.x + i - 1
-                    ny = self.y + i - 1
+                    ny = self.y + j - 1
 
                     if nx < 0 or ny < 0:
                         continue
