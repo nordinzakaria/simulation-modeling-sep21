@@ -7,7 +7,6 @@ import numpy as np
 
 simTime = 0
 simEnd =20 
-lock = threading.Lock()
 
 class Grid:
     def __init__(self, dim):
